@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sections = document.querySelectorAll('div[id^="section"]');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById('sectionhome').style.display = 'block';
+        });
+
+        function display(sectionId) {
+            var sections = document.querySelectorAll('div[id^="section"]');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+            window.scrollTo(0, 0); // Scroll to the top of the new section
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <div id="sectionhome">
+        <div class="container py-5 mt-5">
+            <h1 class="mb-5 text-center primary-text-color">Welcome to Hyderabad Bus Bookings!</h1>
+            <h2 class="mb-5 text-center primary-text-color">Select Your Destination</h2>
+
+            <div class="row text-center">
+
+                <div class="col-6 mb-4">
+                    <div class="card destination-card">
+                        <img src="https://s3.india.com/wp-content/uploads/2024/12/Vijayawada-temples.jpg" class="card-img-top dest-img" alt="Vijayawada Temple">
+                        <div class="card-body p-2">
+                            <h5 class="card-title mb-1">VIJAYAWADA</h5>
+                            <button class="btn btn-primary" onclick="display('section1')"> View Trips </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6  mb-4">
+                    <div class="card destination-card">
+                        <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="card-img-top dest-img" alt="Karimnagar City">
+                        <div class="card-body p-2">
+                            <h5 class="card-title mb-1">KARIMNAGAR</h5>
+                            <button class="btn btn-primary" onclick="display('section2')"> View Trips </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mb-4">
+                    <div class="card destination-card">
+                        <img src="https://www.sakshi.com/s3fs-public/inline-images/Jagtial_Fort.jpg" class="card-img-top dest-img" alt="Jagtial Fort">
+                        <div class="card-body p-2">
+                            <h5 class="card-title mb-1">JAGITAL</h5>
+                            <button class="btn btn-primary" onclick="display('section3')"> View Trips </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6  mb-4">
+                    <div class="card destination-card">
+                        <img src="https://www.indiatravel.app/wp-content/uploads/2024/04/places-to-visit-in-nizamabad.png" class="card-img-top dest-img" alt="Nizamabad Towers">
+                        <div class="card-body p-2">
+                            <h5 class="card-title mb-1">NIZAMBAD</h5>
+                            <button class="btn btn-primary" onclick="display('section4')"> View Trips </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section1">
+        <div class="trip-section container-fluid py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">Vijayawada: Available Bus Timings</h2>
+                <div class="row">
+
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="TSRTC Bus">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">AC Sleeper Express</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 06:00 AM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 7.5 Hrs | Price: **₹850** | Features: AC, Blanket,
+                                    Water</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (25 Seats)</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="Luxury Bus Interior">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">Non-AC Seater</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 10:30 PM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 8 Hrs | Price: **₹600** | Features: Basic Seating</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (12 Seats)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary rounded-pill" onclick="display('sectionhome')">← Back to Destinations</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2">
+        <div class="trip-section container-fluid py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">KARIMNAGAR: Available Bus Timings</h2>
+                <div class="row">
+
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="City Bus">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">AC Sleeper Express</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 06:00 AM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 7.5 Hrs | Price: **₹850** | Features: AC, Blanket, Water</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (25 Seats)</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="Bus at Sunset">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">Non-AC Seater</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 10:30 PM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 8 Hrs | Price: **₹600** | Features: Basic Seating</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (25 Seats)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary rounded-pill" onclick="display('sectionhome')">← Back to Destinations</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3">
+        <div class="trip-section container-fluid py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">JAGITAL: Available Bus Timings</h2>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="Modern Bus">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">Executive AC Seater</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 07:30 PM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 6 Hrs | Price: **₹950** | Features: AC, Reclining Seats</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (18 Seats)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary rounded-pill" onclick="display('sectionhome')">← Back to Destinations</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4">
+        <div class="trip-section container-fluid py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-primary">NIZAMBAD: Available Bus Timings</h2>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="card trip-card d-flex flex-row p-3 align-items-center">
+                            <img src="https://images.pexels.com/photos/3796308/pexels-photo-3796308.jpeg" class="trip-photo" alt="Bus on Road">
+                            <div class="flex-grow-1">
+                                <h4 class="card-title mb-1">Standard Non-AC</h4>
+                                <p class="card-text mb-1 text-muted font-weight-bold">Departure: 04:00 PM (Hyderabad)</p>
+                                <p class="small text-info">Duration: 5 Hrs | Price: **₹500** | Features: Economy Seating</p>
+                            </div>
+                            <button class="btn btn-success btn-sm ml-auto">Book (40 Seats)</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-primary rounded-pill" onclick="display('sectionhome')">← Back to Destinations</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
