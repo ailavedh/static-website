@@ -1,66 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
- body {
-     font-family: 'Roboto', sans-serif;
- }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.food-munch-logo {
+    width: 90px;
+    height: 80px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
 
 
- .primary-text-color {
-     color: #151756 !important;
- }
-
- 
- .dest-img {
-     height: 120px;
-     width: 100%;
-     object-fit: cover;
-     border-radius: 5px;
- }
-
- .destination-card {
-     border: 1px solid #ddd;
-     transition: transform 0.2s;
-     height: 100%;
- }
-
- .destination-card:hover {
-     transform: translateY(-5px);
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
- }
+.primary-text-color {
+    color: #151756 !important;
+}
 
 
- .trip-section {
-     min-height: 100vh;
- }
+.dest-img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
- #sectionhome {
-     min-height: 100vh;
- }
+.destination-card {
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+    height: 100%;
+}
 
- .trip-card {
-     border-left: 5px solid #151756;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     background-color: white;
- }
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
- .trip-photo {
-     width: 100px;
-    
-     height: 70px;
-     
-     object-fit: cover;
-     
-     padding: 0;
-     
-     border-radius: 3px;
-    
-     background-color: transparent;
-     
-     margin-right: 15px;
-     
- }
 
- .text-info {
-     color:#007bff !important;
-    
- }
+.trip-section {
+    min-height: 100vh;
+}
+
+#sectionhome {
+    min-height: 100vh;
+}
+
+.trip-card {
+    border-left: 5px solid #151756;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.trip-photo {
+
+    width: 100px;
+
+    height: 70px;
+
+    object-fit: cover;
+
+    padding: 0;
+
+    border-radius: 3px;
+
+    background-color: transparent;
+
+    margin-right: 15px;
+
+}
+
+.text-info {
+    color: #007bff !important;
+
+}
